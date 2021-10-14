@@ -1,0 +1,8 @@
+/* vesterbro-poster - english_latin */
+@font-face {
+    font-family: "Vesterbro Poster";
+    font-style: normal;
+    font-weight: 900;
+    font-display: optional;
+    src: url("/fonts/vesterbro-poster.woff2") format("woff2");
+}
