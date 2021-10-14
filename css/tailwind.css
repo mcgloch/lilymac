@@ -71,3 +71,17 @@ html {
     transform: rotate(0deg);
   }
 }
+@layer base {
+  /* vesterbro-poster - english_latin */
+  @font-face {
+    font-family: "Vesterbro Poster";
+    font-style: normal;
+    font-weight: 900;
+    font-display: optional;
+    src: url("/fonts/vesterbro-poster.woff2") format("woff2"), src: url("/fonts/vesterbro-poster.woff") format("woff");
+  }
+}
+
+h1 {
+  font-family: "Vesterbro Poster", sans-serif;
+}
