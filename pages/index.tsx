@@ -1,6 +1,6 @@
 import Link from '@/components/CustomLink'
 import { PageSEO } from '@/components/SEO'
-import Hero from "@/components/Hero";
+import Hero from '@/components/Hero'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'

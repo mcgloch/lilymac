@@ -1,16 +1,16 @@
-import { useDarkTheme } from "@/lib/hooks/useDarkTheme";
-import { Switch } from "@headlessui/react";
+import { useDarkTheme } from '@/lib/hooks/useDarkTheme'
+import { Switch } from '@headlessui/react'
 
 const ThemeSwitch = () => {
-  const [isDark, mounted, setTheme] = useDarkTheme();
-  if (!mounted) return <div className="w-12 ml-4" />;
+  const [isDark, mounted, setTheme] = useDarkTheme()
+  if (!mounted) return <div className="w-12 ml-4" />
   return (
     <div className="flex items-center">
       <Switch
         checked={isDark}
         title="Theme switch"
-        onChange={() => setTheme(isDark ? "light" : "dark")}
-        className={`${isDark ? "bg-gray-700" : "bg-gray-300"}
+        onChange={() => setTheme(isDark ? 'light' : 'dark')}
+        className={`${isDark ? 'bg-gray-700' : 'bg-gray-300'}
           relative inline-flex flex-shrink-0 h-6 w-12 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
       >
         <span className="sr-only">Use setting</span>
@@ -19,7 +19,7 @@ const ThemeSwitch = () => {
           viewBox="0 0 20 20"
           fill="currentColor"
           className={`${
-            isDark ? "translate-x-6" : "translate-x-0"
+            isDark ? 'translate-x-6' : 'translate-x-0'
           } border-2 border-transparent absolute h-6 w-6 text-gray-900 dark:text-gray-100 transition ease-in-out duration-200`}
         >
           {isDark ? (
@@ -35,12 +35,12 @@ const ThemeSwitch = () => {
         <span
           aria-hidden="true"
           className={`${
-            isDark ? "translate-x-0 " : "translate-x-6"
+            isDark ? 'translate-x-0 ' : 'translate-x-6'
           } bg-gray-100 pointer-events-none inline-block h-6 w-6 rounded-full shadow transform ring-0 transition ease-in-out duration-200`}
         ></span>
       </Switch>
     </div>
-  );
-};
+  )
+}
 
-export default ThemeSwitch;
+export default ThemeSwitch

@@ -1,7 +1,7 @@
-import SectionContainer from "./SectionContainer";
-import Footer from "./Footer";
-import Header from "./Header";
-import { Container } from "@/lib/types/common";
+import SectionContainer from './SectionContainer'
+import Footer from './Footer'
+import Header from './Header'
+import { Container } from '@/lib/types/common'
 
 const LayoutWrapper = ({ children }: Container) => {
   return (
@@ -14,7 +14,7 @@ const LayoutWrapper = ({ children }: Container) => {
         <Footer />
       </SectionContainer>
     </>
-  );
-};
+  )
+}
 
-export default LayoutWrapper;
+export default LayoutWrapper

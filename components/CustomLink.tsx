@@ -1,11 +1,11 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 interface CustomLinkProps extends React.LinkHTMLAttributes<HTMLAnchorElement> {
-  showIcon?: boolean;
+  showIcon?: boolean
 }
 const CustomLink = ({ href, children, className, showIcon = true, ...rest }: CustomLinkProps) => {
-  const isInternalLink = href && href.startsWith("/");
-  const isAnchorLink = href && href.startsWith("#");
+  const isInternalLink = href && href.startsWith('/')
+  const isAnchorLink = href && href.startsWith('#')
 
   if (isInternalLink || isAnchorLink) {
     return (
@@ -14,7 +14,7 @@ const CustomLink = ({ href, children, className, showIcon = true, ...rest }: Cus
           {children}
         </a>
       </Link>
-    );
+    )
   }
 
   return (
@@ -22,7 +22,7 @@ const CustomLink = ({ href, children, className, showIcon = true, ...rest }: Cus
       <a
         target="_blank"
         rel="noopener noreferrer"
-        className={`items-center ${className ? className : ""}`}
+        className={`items-center ${className ? className : ''}`}
         {...rest}
       >
         {children}
@@ -43,7 +43,7 @@ const CustomLink = ({ href, children, className, showIcon = true, ...rest }: Cus
         )}
       </a>
     </Link>
-  );
-};
+  )
+}
 
-export default CustomLink;
+export default CustomLink
