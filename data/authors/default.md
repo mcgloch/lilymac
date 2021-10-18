@@ -1,10 +1,10 @@
 ---
-name: Tails Azimuth
+name: Lily Mac
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
+occupation: Product Designer
+company: Lily Mac
+email: mcgloch@gmail.com
+twitter: https://twitter.com/its_torchic
 linkedin: https://www.linkedin.com
 github: https://github.com
 ---

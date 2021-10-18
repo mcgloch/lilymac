@@ -33,14 +33,14 @@ export default function Hero() {
       </h1>
       <div className="space-y-2 md:space-y-5">
         <PageTitle>
-          Hello! I'm Leanne{' '}
+          Hello, I'm Lily Mac{' '}
           <span role="img" aria-label="waving hand" className="wave">
             👋
           </span>
         </PageTitle>
         <p className="text-lg leading-7 prose text-gray-500 max-w-none dark:text-gray-400">
-          I'm a product designer living in Manchester, England{' '}
-          <span role="img" aria-label="vietnam flag">
+          I'm an Irish product designer working remotely in the UK{' '}
+          <span role="img" aria-label="irish flag">
             🇮🇪
           </span>
           .{' '}
